@@ -4,46 +4,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
+
+
 }
 
-/* .element{
-    animation: Pulse 10s 0s infinite;
+/* navbar */
+.navbar{
+    background-color:rgb(0, 0, 0);  
+    display: flex;
+    justify-content: space-between; 
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+ul{
+    display: flex;
+    padding:  20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.logo{
+    border-radius: 50%;
+    height: 125px;
+}
+.nav-links, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+/* body */
+h1{
+   text-align: center; 
+}
+main{
+    background-image: linear-gradient(180deg, #BC3B32, rgb(180, 180, 23));
+    height: 100vh;
+}
+
+/* Animation */
+.RR{
+   height: 20vh ;
+}
+
+.element{
+    animation: fly 5s 0s infinite;
     width: 120px;
     height: 120px;
     position: absolute;
     background-color: transparent;
 }
 
-@keyframes Pulse {
-    0%{
-        background-color: yellowgreen;
-        top: 0%;
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
-    }
-    25%{
-        background-color: blue;
-        
-    }
+@keyframes fly {
     50%{
-        background-color: blueviolet;
-        bottom: 50%;
-        left: 50%;
-        right: 50%;
-        
+        left: 0%;
+       
         
     }
-    75%{
-        background-color: hotpink;
-        bottom: 75%;
-        right: 75%;
-    }
+
     100%{
-        background-color: red;
-        top: 100%;
-        bottom:100%;
         left: 100%;
-        right: 100%;
+        
     }
-} */
+}
+
+/* Flip card */
